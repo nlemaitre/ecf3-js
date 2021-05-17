@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ECF-3 Html, Css, Javascript</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="genre.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="formulaire"> 
+
+            <form id="listForm">
+
+                <div class="col">
+
+                    <div class="col-md-6">
+                        <label>Prénom</label>
+                        <input type="text" class="form-control" id="addName" placeholder="Ajouter votre prénom">   
+                    </div><br>
+
+                    <div class="col-md-6">
+                        <label>Nom</label>
+                        <input type="text" class="form-control" id="addLastName" placeholder="Ajouter votre nom">  
+                    </div><br>
+                    
+                    <div class="col-md-6">
+                        <label>Job</label>
+                        <input type="text" class="form-control" id="addJobTitle" placeholder="Ajouter votre job">
+                    </div><br>
+
+                    <div class="col-md-6">
+                        <label for="validationCustom03">Email</label>
+                        <input type="email" class="form-control" id="addEmail" placeholder="ajouter votre Mail : exemple@javascript.com"> 
+                    </div><br>
+                        
+                    <div class="col-md-6">
+                        <button class="btn btn-success" type="button" onclick="btnAdd()">Ajouter à la liste</button>
+                    </div>
+
+                </div>  
+            </form>
+        </div>
+
+        <h1>Listing des employés</h1>
+
+        <ul id="list"></ul>
+
+    </div>
+
+    <div class="modal" id="modalInfo" aria-labelledby="modalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-body" id="modalBody">
+                        
+                    <form id="modalForm">
+                        <div class="col">
+
+                            <div class="header">
+                                <h4 class="modal-title">Information personnelle de l'employé</h1>
+                            </div><br>
+
+                            <div class="col-12">
+                                <label>Nom</label>
+                                <input type="text" class="form-control" id="modalName" required>
+                            </div><br>
+
+                            <div class="col-12">
+                                <label>Prénom</label>
+                                <input type="text" class="form-control" id="modalLastName" required>
+                            </div><br>
+                            
+                            <div class="col-12">
+                                <label>Job</label>
+                                <input type="text" class="form-control" id="modalJobTitle" required>
+                            </div><br>
+                            
+                            <div class="col-12">
+                                <label>Email</label>
+                                <input type="email" class="form-control" id="modalEmail" required>
+                            </div><br>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer" id="modalFooter"></div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="eval3.js"></script>
+
+</body>
+
+</html>

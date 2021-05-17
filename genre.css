@@ -1,0 +1,17 @@
+h1 {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    padding: 40px;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 35% 35% 25%;
+    row-gap: 3px;
+    width: 50%;
+}
+
+#modalBody {
+    width: 100%;
+}
